@@ -1,0 +1,10 @@
+Phase 1 — Baseline Results (FP32)
+======================================
+Dataset           : WikiMaths (DTDG benchmark)
+Model             : EvolveGCN-O
+Device            : cuda (NVIDIA GeForce RTX 4080 SUPER)
+Epochs            : 200
+Macro F1 Score    : 0.6760
+AUC Score         : 0.7538
+Training Time     : 239.1 s
+Peak GPU Memory   : 361.8 MB

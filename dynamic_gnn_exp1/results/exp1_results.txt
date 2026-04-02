@@ -1,0 +1,14 @@
+Experiment 1 — Quantization Results
+========================================
+Dataset          : WikiMaths (DTDG benchmark)
+Model            : EvolveGCN-O (trained in Phase 1)
+
+Precision       F1 Score    F1 Drop     Size (MB)    Latency (ms)
+-----------------------------------------------------------------
+FP32            0.6760      —           0.003        1.05
+INT8            0.6763      -0.0003     0.004        0.87
+INT4 (sim)      0.6700      0.0061      0.000        —
+
+Key finding:
+  INT8 causes near-zero F1 drop — model is robust at 8-bit.
+  INT4 is similar to INT8 — the model is broadly robust to low precision here.
